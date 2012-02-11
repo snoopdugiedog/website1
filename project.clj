@@ -1,3 +1,6 @@
+;; ClojureScript must be on the classpath
+;; getting this working was from:
+;; http://nakkaya.com/2011/12/04/leiningen-clojurescript-and-browser-repl/
 (defn cljs-home [path]
   (if-let [home (get (System/getenv) "CLOJURESCRIPT_HOME")]
     (str home path)
